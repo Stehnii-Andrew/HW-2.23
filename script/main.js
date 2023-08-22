@@ -14,7 +14,7 @@ button.addEventListener('click', (ev) => {
 document.addEventListener('mousemove', (ev) => {
     let x = ev.x - 570;
     let y = ev.y - 287;
-    function arcctg (x,y) {
+    let arcctg = (x,y) => {
         if(x > 0 && y > 0)return Math.PI / 2 - Math.atan(x / y);
         if(x < 0 && y > 0)return Math.PI / 2 - Math.atan(x / y);
         if(x < 0 && y < 0)return Math.PI + Math.abs(Math.atan(y / x));
@@ -27,7 +27,7 @@ document.addEventListener('mousemove', (ev) => {
 document.addEventListener('mousemove', (ev) => {
     let x = ev.x - 635;
     let y = ev.y - 287;
-    function arcctg (x,y) {
+    let arcctg = (x,y) => {
         if(x > 0 && y > 0)return Math.PI / 2 - Math.atan(x / y);
         if(x < 0 && y > 0)return Math.PI / 2 - Math.atan(x / y);
         if(x < 0 && y < 0)return Math.PI + Math.abs(Math.atan(y / x));
